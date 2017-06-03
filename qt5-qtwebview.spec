@@ -29,6 +29,8 @@ BuildRequires:	pkgconfig(Qt5PrintSupport)
 BuildRequires:	pkgconfig(Qt5Sensors)
 BuildRequires:	pkgconfig(Qt5WebEngine)
 BuildRequires:	cmake(Qt5QuickWidgets)
+BuildRequires:	qt5-qtquick-private-devel
+BuildRequires:	qt5-qtquickwidgets-private-devel
 BuildRequires:	qmake5
 
 %description
