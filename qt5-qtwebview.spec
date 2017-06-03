@@ -29,6 +29,7 @@ BuildRequires:	pkgconfig(Qt5PrintSupport)
 BuildRequires:	pkgconfig(Qt5Sensors)
 BuildRequires:	pkgconfig(Qt5WebEngine)
 BuildRequires:	cmake(Qt5QuickWidgets)
+BuildRequires:	qmake5
 
 %description
 Qt WebView provides a way to display web content in a QML application without
