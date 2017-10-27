@@ -1,4 +1,4 @@
-%define beta beta
+%define beta beta2
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
@@ -7,7 +7,7 @@ Name:		qt5-qtwebview
 Version:	5.10.0
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
-%define qttarballdir qtwebview-everywhere-src-%{version}-%{beta}
+%define qttarballdir qtwebview-everywhere-src-%{version}
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/%{qttarballdir}.tar.xz
 %else
 Release:	1
