@@ -1,4 +1,4 @@
-%define beta rc3
+%define beta %{nil}
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
@@ -11,7 +11,7 @@ Release:	0.%{beta}.1
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%(echo %{beta} |sed -e "s,1$,,")/submodules/%{qttarballdir}.tar.xz
 %else
 Release:	1
-%define qttarballdir qtwebview-opensource-src-%{version}
+%define qttarballdir qtwebview-everywhere-src-%{version}
 #Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}-clean.tar.xz
 Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
