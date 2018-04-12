@@ -1,10 +1,10 @@
-%define beta %{nil}
+%define beta beta3
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
 Summary:	Qt WebView - a module for displaying web content in a QML application
 Name:		qt5-qtwebview
-Version:	5.10.1
+Version:	5.11.0
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtwebview-everywhere-src-%{version}-%{beta}
@@ -32,6 +32,8 @@ BuildRequires:	cmake(Qt5QuickWidgets)
 BuildRequires:	qt5-qtquick-private-devel
 BuildRequires:	qt5-qtquickwidgets-private-devel
 BuildRequires:	qmake5
+# For the Provides: generator
+BuildRequires:	cmake >= 3.11.0-1
 
 %description
 Qt WebView provides a way to display web content in a QML application without
