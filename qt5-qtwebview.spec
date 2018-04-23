@@ -1,4 +1,4 @@
-%define beta beta3
+%define beta beta4
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
@@ -52,6 +52,7 @@ makes sense.
 %files -n %{libpkg}
 %{_libdir}/libQt5WebView.so.5*
 %{_libdir}/qt5/qml/QtWebView
+%{_libdir}/qt5/plugins/webview
 
 %package -n %{devpkg}
 Summary:	Development files for QtWebEngine
