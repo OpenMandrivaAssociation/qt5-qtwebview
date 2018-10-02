@@ -82,12 +82,11 @@ Examples for QtWebEngine.
 %{_libdir}/qt5/examples
 
 %prep
-%setup -qn %{qttarballdir}
-%apply_patches
+%autosetup -n %{qttarballdir} -p1
 
 %build
 %qmake_qt5
-%make
+%make_build
 
 %install
-%make install INSTALL_ROOT=%{buildroot}
+%make_install INSTALL_ROOT=%{buildroot}
