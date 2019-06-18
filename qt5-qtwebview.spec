@@ -1,10 +1,10 @@
-%define beta %{nil}
+%define beta rc3
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
 Summary:	Qt WebView - a module for displaying web content in a QML application
 Name:		qt5-qtwebview
-Version:	5.12.3
+Version:	5.13.0
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtwebview-everywhere-src-%{version}-%{beta}
