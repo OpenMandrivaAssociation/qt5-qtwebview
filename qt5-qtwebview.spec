@@ -4,9 +4,9 @@
 
 Summary:	Qt WebView - a module for displaying web content in a QML application
 Name:		qt5-qtwebview
-Version:	5.13.0
+Version:	5.13.1
 %if "%{beta}" != ""
-Release:	0.%{beta}.1
+Release:	1
 %define qttarballdir qtwebview-everywhere-src-%{version}-%{beta}
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%(echo %{beta} |sed -e "s,1$,,")/submodules/%{qttarballdir}.tar.xz
 %else
