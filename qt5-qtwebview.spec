@@ -31,6 +31,7 @@ BuildRequires:	pkgconfig(Qt5WebEngine)
 BuildRequires:	cmake(Qt5QuickWidgets)
 BuildRequires:	qt5-qtquick-private-devel
 BuildRequires:	qt5-qtquickwidgets-private-devel
+BuildRequires:	qt5-qtqmlmodels-private-devel
 BuildRequires:	qmake5
 # For the Provides: generator
 BuildRequires:	cmake >= 3.11.0-1
