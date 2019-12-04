@@ -1,4 +1,4 @@
-%define beta beta3
+%define beta rc
 %define libpkg %mklibname qt5webview 5
 %define devpkg %mklibname qt5webview -d
 
