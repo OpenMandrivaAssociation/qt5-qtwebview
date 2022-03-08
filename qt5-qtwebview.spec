@@ -10,13 +10,13 @@ Release:	0.%{beta}.1
 %define qttarballdir qtwebview-everywhere-src-%{version}-%{beta}
 Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/%{qttarballdir}.tar.xz
 %else
-Release:	1
-%define qttarballdir qtwebview-everywhere-src-5.15.2
+Release:	2
+%define qttarballdir qtwebview-everywhere-opensource-src-%{version}
 #Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}-clean.tar.xz
-Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/5.15.2/submodules/%{qttarballdir}.tar.xz
+Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
 # From KDE
-Patch1000:	0001-Bump-version.patch
+# [currently no patches]
 License:	GPLv2 LGPLv3
 Group:		System/Libraries
 Url:		http://qt.io/
@@ -85,7 +85,7 @@ Examples for QtWebEngine.
 %{_libdir}/qt5/examples
 
 %prep
-%autosetup -n %{qttarballdir} -p1
+%autosetup -n %(echo %{qttarballdir}|sed -e 's,-opensource,,') -p1
 %{_libdir}/qt5/bin/syncqt.pl -version %{version}
 
 %build
