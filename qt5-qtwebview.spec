@@ -19,7 +19,7 @@ Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f
 # [currently no patches]
 License:	GPLv2 LGPLv3
 Group:		System/Libraries
-Url:		http://qt.io/
+Url:		https://qt.io/
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Network)
